@@ -17,12 +17,12 @@
 
 	const MAX_TIME_IN = 9 * 60 * 60 + 59 * 60 + 59;
 
-	const addTime = (currentNumber: number, deltaSeconds: number) => {
+	const addTime = (currentNumber: number, maxNumber: number, deltaSeconds: number) => {
 		let newTime;
-		if (currentNumber === 9 && deltaSeconds > 0) {
-			newTime = timeIn - 9 * deltaSeconds
+		if (currentNumber === maxNumber && deltaSeconds > 0) {
+			newTime = timeIn - maxNumber * deltaSeconds
 		} else if(currentNumber === 0 && deltaSeconds < 0) {
-			newTime = timeIn - 9 * deltaSeconds // deltaSeconds is negative here
+			newTime = timeIn - maxNumber * deltaSeconds // deltaSeconds is negative here
 		} else {
 			newTime = timeIn + deltaSeconds;
 		}
@@ -43,13 +43,13 @@
 	<RowDivider />
 	<RowWidgetHolder>
 		<div class="arrows-holder">
-			<Arrow direction="UP" onClick={() => addTime(h1, 3600)} />
+			<Arrow direction="UP" onClick={() => addTime(h1, 9, 3600)} />
 			<Arrow />
-			<Arrow direction="UP" onClick={() => addTime(m10, 600)} />
-			<Arrow direction="UP" onClick={() => addTime(m1, 60)} />
+			<Arrow direction="UP" onClick={() => addTime(m10, 5, 600)} />
+			<Arrow direction="UP" onClick={() => addTime(m1, 9, 60)} />
 			<Arrow />
-			<Arrow direction="UP" onClick={() => addTime(s10, 10)} />
-			<Arrow direction="UP" onClick={() => addTime(s1, 1)} />
+			<Arrow direction="UP" onClick={() => addTime(s10, 5, 10)} />
+			<Arrow direction="UP" onClick={() => addTime(s1, 9, 1)} />
 		</div>
 		<div class="clock-holder">
 			<Clock>
@@ -66,13 +66,13 @@
 			</Clock>
 		</div>
 		<div class="arrows-holder">
-			<Arrow direction="DOWN" onClick={() => addTime(h1, -3600)} />
+			<Arrow direction="DOWN" onClick={() => addTime(h1, 9, -3600)} />
 			<Arrow />
-			<Arrow direction="DOWN" onClick={() => addTime(m10, -600)} />
-			<Arrow direction="DOWN" onClick={() => addTime(m1, -60)} />
+			<Arrow direction="DOWN" onClick={() => addTime(m10, 5, -600)} />
+			<Arrow direction="DOWN" onClick={() => addTime(m1, 9, -60)} />
 			<Arrow />
-			<Arrow direction="DOWN" onClick={() => addTime(s10, -10)} />
-			<Arrow direction="DOWN" onClick={() => addTime(s1, -1)} />
+			<Arrow direction="DOWN" onClick={() => addTime(s10, 5, -10)} />
+			<Arrow direction="DOWN" onClick={() => addTime(s1, 9, -1)} />
 		</div>
 	</RowWidgetHolder>
 </Row>

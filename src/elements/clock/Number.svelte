@@ -5,7 +5,7 @@
 	export let num: number;
 	export let maxNum: number = 9;
 	export let large: boolean = false;
-	export let addTime: (currentNumber: number, deltaSeconds: number) => void = null;
+	export let addTime: (currentNumber: number, maxNumber: number, deltaSeconds: number) => void = null;
 	export let deltaSeconds: number = 0;
 	export let error: boolean = false;
 
@@ -16,17 +16,17 @@
 	$: translateY = -10 * (9 - num);
 	$: className = classNames('number', { large, error });
 
-	const onClick = () => addTime(num, deltaSeconds);
+	const onClick = () => addTime(num, maxNum, deltaSeconds);
 
 	const onKeyDown = (e: KeyboardEvent) => {
 		switch (e.code) {
 			case 'ArrowRight':
 			case 'ArrowUp':
-				addTime(num, deltaSeconds);
+				addTime(num, maxNum, deltaSeconds);
 				break;
 			case 'ArrowDown':
 			case 'ArrowLeft':
-				addTime(num, -1 * deltaSeconds);
+				addTime(num, maxNum, -1 * deltaSeconds);
 				break;
 			case 'Digit0':
 			case 'Digit1':
@@ -42,7 +42,7 @@
 				if (enteredNum > maxNum) {
 					break;
 				}
-				addTime(num, deltaSeconds * (enteredNum - num));
+				addTime(num, maxNum, deltaSeconds * (enteredNum - num));
 				// TODO: if they entered a number then advance to next tab
 				break;
 			default:
