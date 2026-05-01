@@ -131,14 +131,14 @@
 			h1 {
 				font-size: 1.6rem;
 				margin: 0 0 1rem;
-				font-family: 'bebas', sans-serif;
+				font-family: 'Bebas Neue', sans-serif;
 				letter-spacing: 0.03em;
 			}
 
 			h2 {
 				font-size: 1.15rem;
 				margin: 1.5rem 0 0.5rem;
-				font-family: 'bebas', sans-serif;
+				font-family: 'Bebas Neue', sans-serif;
 				letter-spacing: 0.03em;
 			}
 

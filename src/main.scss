@@ -5,11 +5,6 @@
 	src: url(/font/MONOFONT.TTF);
 }
 
-@font-face {
-	font-family: $bebasFontFamily;
-	src: url(/font/BebasNeue.otf);
-}
-
 :global(html),
 :global(body) {
 	font-family: $bebasFontFamily;
