@@ -68,7 +68,6 @@
 </Panel>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	.number-column-holder {
 		overflow: hidden;

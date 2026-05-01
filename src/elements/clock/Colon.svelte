@@ -13,7 +13,6 @@
 </Panel>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	.colon-holder {
 		height: 100%;

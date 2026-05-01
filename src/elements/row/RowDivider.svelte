@@ -3,7 +3,6 @@
 </div>
 
 <style lang="scss">
-	@import 'src/main.scss';
 
 	.divider-holder {
 		display: none;

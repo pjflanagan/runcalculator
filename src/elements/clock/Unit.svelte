@@ -15,7 +15,6 @@
 </Panel>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	.unit-holder {
 		height: 100%;

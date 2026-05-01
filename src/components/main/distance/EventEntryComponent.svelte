@@ -78,7 +78,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../../main.scss';
 
 	.event-picker-holder {
 		width: 100%;

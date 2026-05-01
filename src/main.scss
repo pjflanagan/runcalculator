@@ -1,9 +1,4 @@
-$black: #1c1c1c;
-$grey: #1c1c1c99;
-$white: #fff;
-
-$bebasFontFamily: 'bebas';
-$digitalFontFamily: 'digital';
+@use 'variables' as *;
 
 @font-face {
 	font-family: $digitalFontFamily;

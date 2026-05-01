@@ -28,7 +28,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../../main.scss';
 
 	.events-holder {
 		height: 100%;

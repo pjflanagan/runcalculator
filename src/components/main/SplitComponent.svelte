@@ -56,7 +56,6 @@
 </Row>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	$splitPickerHeight: 42px;
 
