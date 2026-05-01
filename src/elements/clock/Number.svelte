@@ -20,12 +20,10 @@
 
 	const onKeyDown = (e: KeyboardEvent) => {
 		switch (e.code) {
-			case 'ArrowRight':
 			case 'ArrowUp':
 				addTime(num, maxNum, deltaSeconds);
 				break;
 			case 'ArrowDown':
-			case 'ArrowLeft':
 				addTime(num, maxNum, -1 * deltaSeconds);
 				break;
 			case 'Digit0':

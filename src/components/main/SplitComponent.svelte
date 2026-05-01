@@ -45,6 +45,7 @@
 				</div>
 			{/each}
 			<div
+				id="split-focus"
 				class="split-backer"
 				style={`left: ${20 * splitIndex}%`}
 				tabindex={0}

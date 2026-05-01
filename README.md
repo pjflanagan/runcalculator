@@ -2,6 +2,39 @@
 
 # [Run Calculator](https://runcalculator.flanny.app)
 
+## Setup
+
+```bash
+npm install
+```
+
+## Running locally
+
+```bash
+npm run dev
+```
+
+Opens at `http://localhost:5173`.
+
+## Building
+
+```bash
+npm run build    # production build → build/
+npm run preview  # serve the production build locally
+```
+
 ## Testing
 
-- Change the `module` in `tsconfig.json` before running the test
+Before running tests, temporarily change `"module"` in `tsconfig.json` from `"es2020"` to `"commonjs"`. Revert after.
+
+```bash
+npm run test
+```
+
+## Other commands
+
+```bash
+npm run check   # TypeScript + Svelte type checking
+npm run lint    # lint check (no auto-fix)
+npm run format  # auto-format with Prettier
+```

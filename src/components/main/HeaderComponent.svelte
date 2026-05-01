@@ -123,20 +123,23 @@
 		.modal-content {
 			overflow-y: auto;
 			padding: 2rem 1.75rem 2rem;
-			font-family: Georgia, serif;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+				sans-serif;
 			font-size: 0.9rem;
 			line-height: 1.7;
 
 			h1 {
-				font-size: 1.3rem;
+				font-size: 1.6rem;
 				margin: 0 0 1rem;
-				font-family: Georgia, serif;
+				font-family: 'bebas', sans-serif;
+				letter-spacing: 0.03em;
 			}
 
 			h2 {
-				font-size: 1rem;
+				font-size: 1.15rem;
 				margin: 1.5rem 0 0.5rem;
-				font-family: Georgia, serif;
+				font-family: 'bebas', sans-serif;
+				letter-spacing: 0.03em;
 			}
 
 			p {
