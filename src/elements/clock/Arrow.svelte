@@ -47,7 +47,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	.arrow-holder {
 		width: 16.666%;

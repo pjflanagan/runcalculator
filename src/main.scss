@@ -1,22 +1,12 @@
-$black: #1c1c1c;
-$grey: #1c1c1c99;
-$white: #fff;
-
-$bebasFontFamily: 'bebas';
-$digitalFontFamily: 'digital';
+@use 'variables' as *;
 
 @font-face {
 	font-family: $digitalFontFamily;
 	src: url(/font/MONOFONT.TTF);
 }
 
-@font-face {
-	font-family: $bebasFontFamily;
-	src: url(/font/BebasNeue.otf);
-}
-
-:global(html),
-:global(body) {
+html,
+body {
 	font-family: $bebasFontFamily;
 	margin: 0;
 	width: 100%;
@@ -25,7 +15,7 @@ $digitalFontFamily: 'digital';
 	color: $black;
 }
 
-:global(::selection) {
+::selection {
 	color: #fff;
 	background: $black;
 	opacity: 1;

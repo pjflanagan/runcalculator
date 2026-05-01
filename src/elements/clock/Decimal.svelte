@@ -38,10 +38,13 @@
 </Panel>
 
 <style lang="scss">
+	@use '../../variables' as *;
+
 	.decimal {
 		position: relative;
 		top: 50%;
 		transform: translateY(-100%);
+		font-family: $digitalFontFamily;
 		font-size: 26px;
 
 		&.error {

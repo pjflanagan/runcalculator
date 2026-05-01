@@ -3,7 +3,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../main.scss';
 
 	.clock {
 		display: flex;

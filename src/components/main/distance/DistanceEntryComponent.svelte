@@ -32,7 +32,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../../main.scss';
 
 	$distanceEntryHeight: 42px;
 

@@ -60,6 +60,7 @@
 		{#each visibleEvents as event, i}
 			{#if event.id === race.id}
 				<div
+					id="event-focus"
 					class={getClassName(event, i)}
 					on:click={() => onClick(event)}
 					tabindex="0"
@@ -77,7 +78,6 @@
 </div>
 
 <style lang="scss">
-	@import '../../../main.scss';
 
 	.event-picker-holder {
 		width: 100%;
