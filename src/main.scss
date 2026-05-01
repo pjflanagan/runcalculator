@@ -5,8 +5,8 @@
 	src: url(/font/MONOFONT.TTF);
 }
 
-:global(html),
-:global(body) {
+html,
+body {
 	font-family: $bebasFontFamily;
 	margin: 0;
 	width: 100%;
@@ -15,7 +15,7 @@
 	color: $black;
 }
 
-:global(::selection) {
+::selection {
 	color: #fff;
 	background: $black;
 	opacity: 1;

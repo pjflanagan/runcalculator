@@ -52,6 +52,8 @@
 {/if}
 
 <style lang="scss">
+	@use '../../_variables' as *;
+
 	.header-holder {
 		height: 100%;
 		width: 100%;
@@ -64,7 +66,8 @@
 			transform: translateY(-50%);
 			font-size: 3.6em;
 			text-align: center;
-			font-family: inherit;
+			font-family: $bebasFontFamily;
+			font-weight: normal;
 			background: none;
 			border: none;
 			color: inherit;
