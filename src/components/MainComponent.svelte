@@ -72,5 +72,4 @@
 	<TimeInputComponent bind:timeIn bind:paceMode />
 	<SplitComponent bind:split />
 	<TimeOutputComponent {timeOut} inputError={Error.hasError(timeOutError)} />
-	<!-- {/* <AdComponent /> */} -->
 </Container>
